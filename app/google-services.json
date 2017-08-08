@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "551446963378",
+    "firebase_url": "https://eternalwar-e4753.firebaseio.com",
+    "project_id": "eternalwar-e4753",
+    "storage_bucket": "eternalwar-e4753.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551446963378:android:be9f655bf98d9f4b",
+        "android_client_info": {
+          "package_name": "com.example.rudy.eternalwar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551446963378-ue22s17pbtrug8i4ntu3o0ocl4f6u7mr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rudy.eternalwar",
+            "certificate_hash": "e8c82037e40611193067f5793e2f0700657f0a34"
+          }
+        },
+        {
+          "client_id": "551446963378-vd87gubo5gntcn7ep9hls9n418sb0igd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzTunW-nTUhi6U6KJoxAFKCYnXvLgUElg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "551446963378-vd87gubo5gntcn7ep9hls9n418sb0igd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rudy.eternalwar.StatsPage">
+
+
+    <TextView
+        android:id="@+id/statsTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stats"
+        android:textSize="50sp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gamesplayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Games Played: "
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/statsTittle"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/gameswon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Games Won: "
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/gamesplayed"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/gamesplayed" />
+
+    <TextView
+        android:id="@+id/gamespercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Win Percentage: "
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/missesText"
+        app:layout_constraintTop_toBottomOf="@+id/gameswon"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/missesText" />
+
+    <TextView
+        android:id="@+id/hitsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hits: "
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/gamespercent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/missesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Misses: "
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/hitsText"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/hitsText" />
+
+    <TextView
+        android:id="@+id/hitpercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hit Percent: "
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/missesText"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/missesText" />
+
+    <Button
+        android:id="@+id/statsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="168dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <TableLayout
+        android:layout_width="170dp"
+        android:layout_height="127dp"
+        android:orientation="horizontal"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/statsTittle"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/statsTittle"
+        android:layout_marginLeft="0dp">
+
+        <TextView
+            android:id="@+id/gpStat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            app:layout_constraintLeft_toRightOf="@+id/gwStat"
+            app:layout_constraintRight_toRightOf="@+id/gwStat"
+            app:layout_constraintTop_toBottomOf="@+id/statsTittle"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:id="@+id/gwStat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/wpStat"
+            app:layout_constraintRight_toRightOf="@+id/wpStat"
+            app:layout_constraintTop_toBottomOf="@+id/gpStat"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:id="@+id/wpStat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/hitStat"
+            app:layout_constraintRight_toRightOf="@+id/hitStat"
+            app:layout_constraintTop_toBottomOf="@+id/gwStat"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:id="@+id/hitStat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/missStat"
+            app:layout_constraintRight_toRightOf="@+id/missStat"
+            app:layout_constraintTop_toBottomOf="@+id/wpStat"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:id="@+id/missStat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/hpStat"
+            app:layout_constraintRight_toRightOf="@+id/hpStat"
+            app:layout_constraintTop_toBottomOf="@+id/hitStat"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:id="@+id/hpStat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/missStat"
+            app:layout_constraintRight_toRightOf="@+id/missStat"
+            app:layout_constraintTop_toBottomOf="@+id/missStat"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
